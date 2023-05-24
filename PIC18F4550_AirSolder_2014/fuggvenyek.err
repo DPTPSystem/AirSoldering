@@ -1,0 +1,23 @@
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 7 : call of function without prototype
+Error[1105] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 20 : symbol 'TIMER_INT_OFF' has not been defined
+Error[1105] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 20 : symbol 'T2_PS_1_4' has not been defined
+Error[1105] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 20 : symbol 'T2_POST_1_8' has not been defined
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 20 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 21 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 24 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 27 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 30 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 33 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 36 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 39 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 42 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 51 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 52 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 59 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 60 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 61 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 62 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 63 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 64 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 65 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\fuggvenyek.c 66 : call of function without prototype

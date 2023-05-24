@@ -1,0 +1,26 @@
+Error[1105] C:\PIC18F4550\forrasztoallomas\init.c 9 : symbol 'TRISB' has not been defined
+Error[1101] C:\PIC18F4550\forrasztoallomas\init.c 9 : lvalue required
+Error[1105] C:\PIC18F4550\forrasztoallomas\init.c 10 : symbol 'TRISA' has not been defined
+Error[1101] C:\PIC18F4550\forrasztoallomas\init.c 10 : lvalue required
+Error[1105] C:\PIC18F4550\forrasztoallomas\init.c 11 : symbol 'TRISD' has not been defined
+Error[1101] C:\PIC18F4550\forrasztoallomas\init.c 11 : lvalue required
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 14 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 15 : call of function without prototype
+Error[1105] C:\PIC18F4550\forrasztoallomas\init.c 16 : symbol 'stdout' has not been defined
+Error[1105] C:\PIC18F4550\forrasztoallomas\init.c 16 : symbol '_H_USER' has not been defined
+Error[1101] C:\PIC18F4550\forrasztoallomas\init.c 16 : lvalue required
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 50 : call of function without prototype
+Error[1105] C:\PIC18F4550\forrasztoallomas\init.c 62 : symbol 'TIMER_INT_OFF' has not been defined
+Error[1105] C:\PIC18F4550\forrasztoallomas\init.c 62 : symbol 'T2_PS_1_4' has not been defined
+Error[1105] C:\PIC18F4550\forrasztoallomas\init.c 62 : symbol 'T2_POST_1_8' has not been defined
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 62 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 63 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 66 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 69 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 72 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 75 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 78 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 81 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 84 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 89 : call of function without prototype
+Warning[2058] C:\PIC18F4550\forrasztoallomas\init.c 90 : call of function without prototype

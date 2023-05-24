@@ -1,9 +1,19 @@
 # AirSoldering
 * Forrólevegős SMD forrasztó állomás
-* DPTP System 2014-05-16.
-* 4 soros karakteres kijelző, PIC18F4550 és vagy PIC18F452, K típusú hőszenzor
+* DPTP System 2023-05-24.
+* Projekt keletkezése: 2014-05-16.
+* 4 soros karakteres kijelző, PIC18F4550 és vagy PIC18F452, K típusú hőszenzor és MAX6675 - MPLAB IDE 8.91
 
 ![DPTP System BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/131744_dptp_bga_gep.jpg "DPTP System BGA soldering")
+
+# A kezdet és figyelmeztetés
+Anno 2014-ben kezdtem el komolyabban fogglalkozni a mikrokontrollerekkel és az azokra írható programokkal. Ezzel egyidőben az elektrokinával is 
+fogglakoznom kellett mert a mikrokontrollerek önmagukban nem sokat érnek, kell egy jó elektronikai kialakítás mondhatni körítés, amely majd 
+betölti azt a szerepet, amellyel a programunk képes a vezérlést elvégezni. Mivel a kezdet mindig nehéz és sok tanulással jár sokáig nem készítettem
+sematikus/kapcsolási rajzokat, szimplán elkészítettem fejből a nyáktervet és a nyáktervekre írtam fel az alkatrészek paramétereit. Amjd ezt használva
+beültettem az elkészült panelekt. Ezért ez a projekt nem tartalmaz kapcsolási rajzot, viszont a nyákterven fel vannak tüntetve az alkatrészek
+megnevezései. Az elkészült panel egyszerűsége olyan mértékű, hogy kis szakértelemmel, nagyon könnyen át lehet látni. Kérek mindenkit, hogy ennek
+tudatában álljon neki az utánépítésnek. Köszönöm.
 
 # Miért
 2005-ben megjelent Xbox360-as konzolok hirtelen, gyors és tömeges meghíbásodásai miatt, mondhatni kényszerhelyzetben egy prototípus gépen
@@ -32,14 +42,27 @@ A PCB furatszerelt egyoldalas majd később felületszerelt egyoldalas és kés�
 
 ![SMD BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/14484406329764_b.jpg "SMD BGA soldering")
 
+# Nyáktervek
+Furatszerelt verzió:
+
+![BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/pcb1.PNG "BGA soldering")
+
+![SMD BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/pcb1_b.PNG "SMD BGA soldering")
+
+SMD változat:
+
+![SMD BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/pcb2.PNG "SMD BGA soldering")
+
+![SMD BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/pcb2_c.PNG "SMD BGA soldering")
+
 # Program
 A vezérlő programja még eléggé kezdetleges, de már elég komleksz ahhoz, hogy releváns lehessen. Képes a vezérlő elmenteni 15 előre beállított
 hőprofilt, képes az utolsó beállított hőprofilt megjegyezni és a következő indulásnál az vissza tölteni, illetve üresjáratban képesek vagyunk,
 új profilt betölteni. A húprofil beállítása összesen 6 lépésből áll, amelyek a következőek:
 - 6 x lépés, maximum hőmérséklet, felmelegedési várakozás / kitartás
 
-A hőprofil illetve a forrasztási program lejártát követően a visszahútési eljárásra vált a program, amely ~6fok/ms egészen 80 fokig, majd ezt
-követően a légszállítás a legalacsonyabb fokozatba lép majd 50 fokot elérve le is áll.
+A hőprofil illetve a forrasztási program lejártát követően a visszahútési eljárásra vált a program, amely ~6 fok/másodperc egészen 80 fokig, 
+majd ezt követően a légszállítás a legalacsonyabb fokozatba lép majd 50 fokot elérve le is áll.
 
 ![Display](https://github.com/DPTPSystem/AirSoldering/blob/master/images/14484406336272_b.jpg "Display")
 
