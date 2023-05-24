@@ -5,7 +5,7 @@
 
 # A dokumentum most készül a hiba javítása folyamatban és folyamatos 2023-05-24.
 
-![DPTP System BGA soldering](https://github.com/DPTPSystem/AirSodering/blob/master/images/131744_dptp_bga_gep.jpg "DPTP System BGA soldering")
+![DPTP System BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/131744_dptp_bga_gep.jpg "DPTP System BGA soldering")
 
 # Miért
 2005-ben megjelent Xbox360-as konzolok hirtelen, gyors és tömeges meghíbásodásai miatt, mondhatni kényszerhelyzetben egy prototípus gépen
