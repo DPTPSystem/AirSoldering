@@ -37,6 +37,7 @@ A vezérlő programja még eléggé kezdetleges, de már elég komleksz ahhoz, h
 hőprofilt, képes az utolsó beállított hőprofilt megjegyezni és a következő indulásnál az vissza tölteni, illetve üresjáratban képesek vagyunk,
 új profilt betölteni. A húprofil beállítása összesen 6 lépésből áll, amelyek a következőek:
 - 6 x lépés, maximum hőmérséklet, felmelegedési várakozás / kitartás
+
 A hőprofil illetve a forrasztási program lejártát követően a visszahútési eljárásra vált a program, amely ~6fok/ms egészen 80 fokig, majd ezt
 követően a légszállítás a legalacsonyabb fokozatba lép majd 50 fokot elérve le is áll.
 
