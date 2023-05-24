@@ -47,7 +47,7 @@ Furatszerelt verzió:
 
 ![BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/pcb1.PNG "BGA soldering")
 
-![SMD BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/pcb1_b.PNG "SMD BGA soldering")
+![BGA soldering](https://github.com/DPTPSystem/AirSoldering/blob/master/images/pcb1_b.PNG "BGA soldering")
 
 SMD változat:
 
@@ -77,4 +77,41 @@ Ebben a szakaszban és rövid felsorolásban néhány területet és célgépet 
 7. Hordozható számítógépek
 8. és további BGA vagy SMD, esetenként diszkrét alaktarészekkel szerelt elektronikai berendezések javítása.
 
-# A dokumentum most készül a hiba javítása folyamatban és folyamatos 2023-05-24.
+# Kapcsolodó videós tartalmak
+DPTP System - PS3 ventilátor szabályozás
+https://www.youtube.com/watch?v=6KxBIMjXPOY
+
+DPTP System - Led digitális PWM vezérléssel
+https://www.youtube.com/watch?v=YQ3GbyC51UQ
+
+DPTP System - 4x4-es mátrix keypad PIC-el 
+https://www.youtube.com/watch?v=JBfIr0ge0tk
+
+DPTP System - 4x4 mátrix - PIC 
+https://www.youtube.com/watch?v=hZN4geVwEG4
+
+DPTP SYSTEM - Forrasztó vezérlő prototípus 
+https://www.youtube.com/watch?v=Y2zX46Tqc7M
+
+DPTP System - ZPM Forrasztó 
+https://www.youtube.com/watch?v=1Q6x2KFnHvs
+
+DPTP System - Hőprofilos forrasztó - Működj Pályázat 2017 
+https://www.youtube.com/watch?v=RiwQ2Q4VDKY
+
+# Továbbfejlesztés
+A projekt elkészülte után 1 évvel, további fejlesztések történtek, amelyek a készülékeket kiegészítette egy frissítési szolgáltatással, amely 
+a bootloader segítségével megoldja a már kész gépek új szoftververzióval történő frissítését USB kábelen keresztül. A további szofveres
+fejlesztések már csak akarat és idő kérdése. A gépen elkezdődőt egy SMD forrasztási mód megírása, de idő és érdeklődés hiányában ez a rész
+a demón kívűl nem készűlt el. 
+
+# Új verzió
+Készült a készülékből egy komolyabb kijlezővel és funkciókkal kibővített PIC18F46K22-es MCU-ra épített verzió, amely 80%-ban el is készült, de
+az összeszerelés fázisában idő hiány miatt megrekedt. Erről az új kibővített verzióról, mivel nem készült el teljesen és nem lett tesztelve
+éles helyzetben nem osztom meg, de pár képet és videó anyagot tudok közzétenni. Az új verzió már több höszenzort, több PWM vezérelt meghajtást
+grafikus kijelzőt és alsó IR panel vezérlést is tartalmaz illetve további kisebb felhasználói funkciót tartalmaz.
+
+![Air BGA Station 2.0](https://github.com/DPTPSystem/AirSoldering/blob/master/images/forraszto_v3.JPG "Air BGA Station 2.0")
+
+DPTP System - V3 Forrasztást vezérlő prototípus 
+https://www.youtube.com/watch?v=cjfGa7zWkMY
