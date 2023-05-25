@@ -29,6 +29,44 @@ legyünk képesek a javításokat elvégezni, BGA alkatrészeket cserélni. Font
 a tapasztalatainkra tudjunk támaszkodni és ennek megfelelően a már kitesztelt és jól bevált hőprofilok mellett a lehető legkisebb károsodással
 járjanak a kényes berenezések esetén is a beavatkozások.
 
+# Elmélet a megoldás
+A rendszer elméleti és egyben a megoldása is a sikeres utánépítésnek, hogy valamelyest képet alkossak arról, hogy milyen további eszközöket kell 
+beszerezned, hogy megfelelő írányba indulhass el. Hogy mi a jó és mi nem azt nem akarom senkinek megírni, de hogy én milyen alkotó elemeket
+használtam fel azt nyugodtan tudom leírni. 9 fő részre osztható a teljes állomás:
+1. aluminium doboz, mérete függ majd a légszállítást végző ventillűtor méretétől.
+2. légszállításra PWM vezérelhető 12v-os ventillátor (PS3 ventillátor, ~1.5A).
+3. 3D nyomtatott vagy valamilyen kialakítással meg kell oldani a megfelelő légcsatornát
+4. 4soros, karakteres kijelző HD44780
+5. K-type sensor (80-100cm) vagy forrólevegős forrasztó fej, amelyben benne van a K-type szenzor
+6. 12v-os kapcsolóüzemű tápegység. (fontos, hogy ipari vagy jó minőségú legyen, ne legyen zajos)
+7. 4x4-es matrix gombsor, billenő bekapcsoló gomb, USB kimenet (opcionális)
+8. 45A-es logikai szilárdtestrelé 600v-os (fűtőszál kapcsolgatására)
+9. Buzzer (csipogó)
+
+Elméleti működés: A gép billenő kapcsolóval felkapcsólva az előre elmentett hőprofilt betölti és várakozik a felhasználóra. A memória és a MAX6675
+SPI kapcsolaton keresztül kommunikál. A memóriába összesen 15, egyenként hat lépésben megadott hőprofilt lehet elmenteni, amelyet egy menüből
+később el lehet érni illetve be lehet tölteni. Minden betöltésnél automatikusan a PIC EEPROM memóriájába lementni a betöltött profil számát, amely
+a memóriában lévő pozicióját határoza meg. Indulásnál ezt az EEPROM területet vizsgálja a program és ennek megfelelően tölti be az utoljára kiválasztott
+profilt. Az eszközön 3 LED is található. Rendserint ezek különböző színűek, az egyik LED az üzemelést hivatott jelezni ez álltalában piros, a második
+egy kék színű LED, amely a fejben lévő fűtőszál üzemidejét jelzi vissza. A harmadik LED egy villogó sárga vagy piros visszajelző a teszt vagy 
+demó programot mutatja, amely majd egyszer az SMD forrasztás programmódja lesz. (egyszer)
+A kezelőfelületnél mindenki eldöntheti mit mire használ, csak ebben az esetben a programban ezen részeket át kell írni, de úgy vélem a lehető 
+legoptimálisabb és kézenfekvő funkciókat tettem a gombokra, amelyeket a kijelzőn jelzek is.
+A MAX6675 egy K típusú szenzorhoz készült analog digitális converter, amely az alapvető kompenzációkat tartalmazza, és 12bit-es digitális jelre alakítja,
+amelyekhez SPI-vel lehet hozzáférni. A PWM vezérlés a légáramlat függvényében adható meg figyelembe véve, a forrasztófejre helyzett szűktést.
+A hőprofil elindulását követően 4 fontos értéket láthatunk a kijelzőn. Felüle a beállított hőmérségklet és idő látható, alattuk pedig az aktuális
+adatokat írja ki. A programot bármikor meg lehet szakítani, majd azt újra indítani vagy módosítani a szerkesztés menüponton keresztül. Fontos lehet
+megemlítenem, hogy a 4x4-es gombsort egy saját elképzelés alapján megírt program vezérli, amely a régi telefonoknál (NOKIA) megszokott SMS írásainál
+hazsnálhattunk. Szöveg beírását követően fel fogja kínálni a lehetőségeket a program. A beírásnál elég jól sikerült behatárolnom és kitesztelnem az 
+elkövethető direkt vagy véletlen hibákat, így a program majd ennek megfelelően korrígál. A megszakításokat kimértem, így az 1 másdoperc az pontosnak
+nevezhető. A MAX6675 és a K-type szenzort valós körülmények közt teszteltem és ennek eredményeként és megfelelően állítottam be a szoftveres kompenzációt, 
+amelyek különböző hőmérsékletek esetében más-más is lehet. Erre utóbbira külön korrekciós tálát is hoztam létre. 
+A fűtőszálat egy erre alkalmas és gyors logikai szilárdtestrelével kapcsolgatom, fontos, hogy tényleg gyors legyen és a kapcsoló árama ne legyen nagyobb
+egy LED-énél, vagy is 5v 15-30mA. Ha nagyobb, akkor szükséges az elektronikát egy megfelelő gyors tranzisztorral vagy FET-el kiegészíteni. Hang
+visszajelzés 12v-al működik, egy tranzisztoros kapcsolással. Minden indulásnál és a menüpontok közti váltásnál illetve minden fontosabb funkciónál
+visszajelzést ad az állapotról. Álltalában ezek a visszajelzések egy-egy rövidebb csippanással járnak. Úgy gondolom ennyi elég az elméletről, ha
+további kérdések merülnek fel írj nyugodtan, ha időm engedi és időben észre veszem azonnal reagálok.
+
 # Hiba
 A képen egy hibás hőprofilos forrasztás következménye.:
 
