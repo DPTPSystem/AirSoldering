@@ -138,7 +138,7 @@ https://www.youtube.com/watch?v=1Q6x2KFnHvs
 Tanulmányaim során volt lehetőségem versenyen is indulni, de ezen projekttel díjat nem sikerült bezsebelnem. (Korábbi évben egy kupak 
 elektronikával, díjazott helyezést értem el, amelyet a muszakivagyok.hu oldalon napjainkban is el lehet érni)
 
-DPTP System - Hőprofilos forrasztó - Működj Pályázat 2017 
+DPTP System - Hőprofilos forrasztó - Működj Pályázat 2017
 https://www.youtube.com/watch?v=RiwQ2Q4VDKY
 
 # Továbbfejlesztés
