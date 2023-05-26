@@ -155,5 +155,9 @@ grafikus kijelzőt és alsó IR panel vezérlést is tartalmaz, illetve további
 
 ![Air BGA Station 2.0](https://github.com/DPTPSystem/AirSoldering/blob/master/images/forraszto_v3.JPG "Air BGA Station 2.0")
 
+![Air BGA Station 2.0](https://github.com/DPTPSystem/AirSoldering/blob/master/images/smd_forraszto_v3_1.jpg "Air BGA Station 2.0")
+
+![Air BGA Station 2.0](https://github.com/DPTPSystem/AirSoldering/blob/master/images/smd_forraszto_v3_2.jpg "Air BGA Station 2.0")
+
 DPTP System - V3 Forrasztást vezérlő prototípus 
 https://www.youtube.com/watch?v=cjfGa7zWkMY
